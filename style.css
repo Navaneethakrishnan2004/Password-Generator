@@ -1,0 +1,78 @@
+body {
+  background-color: #f1f1f1;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  margin-top: 20px;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+input[type="text"] {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}
+
+input[type="text"]:focus {
+  background-color: #fff;
+  color: #000;
+  outline: none;
+}
+
+.btn-primary {
+  background-color: #4caf50;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #3e8e41;
+}
+
+.bton:link,
+.bton:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: rgb(27, 27, 27);
+  padding: 10px 50px;
+  /* border: 1px solid; */
+  border-radius: 1000px;
+  display: inline-block;
+  transition: all 0.2s;
+  position: relative;
+}
+
+.bton:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(27, 27, 27, 0.5);
+}
+
+.bton:active {
+  transform: translateY(-3px);
+}
+
+.bton::after {
+  content: "";
+  display: inline-block;
+  border-radius: 100px;
+  top: 0;
+  left: 0;
+  position: absolute;
+  z-index: -1;
+  transition: all 0.3s;
+}
+
+.bton:hover::after {
+  background-color: rgb(129, 129, 129);
+  transform: scaleX(1.2) scaleY(1.2);
+  opacity: 0;
+}
